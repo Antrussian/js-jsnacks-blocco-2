@@ -5,18 +5,24 @@
 
 
 
-let parentElement = document.getElementById('container'); 
-let childElement = document.createElement('p'); 
+let wrapperElement = document.querySelector('.wrapper'); 
 
-inserisciElemento(parentElement, childElement);
+let newElement = document.createElement('p'); 
+
+newElement.innerHTML = "ciaoo";
+
+
+
+inserisciElemento(newElement, wrapperElement);
 
 
 
 
-function inserisciElemento (parent,figlio);
+function inserisciElemento (parent,figlio)
 
 {
-    let nuovoElemento = document.createElement('div');
-    nuovoElemento.appendChild = figlio ;
-    parent.appendChild(nuovoElemento);
+
+   figlio.appendChild(parent);
+  
 }
+
