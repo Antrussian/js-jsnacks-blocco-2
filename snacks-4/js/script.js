@@ -17,9 +17,14 @@ console.log(divisibile(primoNumero,secondoNumero));
 
 
 function divisibile (numberFirst, nuberSecond) {
-    if (numberFirst % nuberSecond === 0 ) {
-    return true;
-        }   
+
+    if ( numberFirst === nuberSecond) {
+        return numberFirst;
+    }
+    
+    else if (numberFirst % nuberSecond === 0 ) {
+        return true;
+            }  
 
     else {
         return false;
@@ -28,3 +33,5 @@ function divisibile (numberFirst, nuberSecond) {
 
 
 }
+
+
