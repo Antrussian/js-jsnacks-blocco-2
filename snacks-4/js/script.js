@@ -16,13 +16,13 @@ let secondoNumero = prompt('Inserisci secondo numero');
 console.log(divisibile(primoNumero,secondoNumero));
 
 
-function divisibile (numberFirst, nuberSecond) {
+function divisibile (numberFirst, numberSecond) {
 
-    if ( numberFirst === nuberSecond) {
+    if ( numberFirst === numberSecond) {
         return numberFirst;
     }
     
-    else if (numberFirst % nuberSecond === 0 ) {
+    else if (numberFirst % numberSecond === 0 ) {
         return true;
             }  
 
