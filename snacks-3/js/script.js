@@ -11,7 +11,7 @@ let parola2 = prompt('Inserisci parola 2');
 function verificaLunghezza(parola1, parola2) {
     if (parola1.length === parola2.length) {
 
-        return "Le due parole hanno la stessa lunghezza.";
+        return parola1 += parola2;
 
     } else if (parola1.length > parola2.length) {
 
