@@ -7,15 +7,18 @@ e genero attraverso una funzione un numero di quadrati equivalente al numero ins
 
  let numberChoice = parseInt (prompt ('Inserisci un numero'));
 
-
+let generaQuadrato = generaSquare(numberChoice);
 
 
  function generaSquare (numeroIndice) {
 
-    for (let i = 0 ; i <= numeroIndice ; i++ )
+    for (let i = 0 ; i <= numeroIndice ; i++ ) {
 
-    document.createElement('div');
-
+        let square = document.createElement('div');
+        document.body.appendChild(square);
+        square.classList.add('quadrato');;
+        }
+        
 
  }
 
