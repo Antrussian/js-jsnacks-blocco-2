@@ -7,7 +7,10 @@ e genero attraverso una funzione un numero di quadrati equivalente al numero ins
 
  let numberChoice = parseInt (prompt ('Inserisci un numero'));
 
-generaSquare(numberChoice);
+    generaSquare(numberChoice);
+
+
+
 
 
  function generaSquare (numeroIndice) {
@@ -15,8 +18,11 @@ generaSquare(numberChoice);
     for (let i = 0 ; i <= numeroIndice ; i++ ) {
 
         let square = document.createElement('div');
-        document.body.appendChild(square);
+        
         square.classList.add('quadrato');
+    
+        document.body.appendChild(square);
+        
         }
         
 
