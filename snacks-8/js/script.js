@@ -49,3 +49,6 @@ let zucchine = [
 ];
 
 
+let pesoTotale = zucchine.reduce((totale, zucchina) => totale + zucchina.peso, 0);
+
+console.log( pesoTotale + 'g');
